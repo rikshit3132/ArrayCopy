@@ -10,8 +10,8 @@ public class ArrayCopy {
         int bLen = array2.length;
         int[] result = new int[aLen + bLen];
 
-        System.out.println((System.arraycopy(array1, 0, result, 0, aLen)));
-       // System.arraycopy(array2, 0, result, aLen, bLen);
+        System.arraycopy(array1, 0, result, 0, aLen);
+       System.arraycopy(array2, 0, result, aLen, bLen);
 
         System.out.println(Arrays.toString(result));
     }
